@@ -1,0 +1,9 @@
+C:\Users\Sonia\documents\visual studio 2010\Projects\Ejercicio Tarea calculadora\Ejercicio Tarea calculadora\bin\Debug\Ejercicio Tarea calculadora.exe
+C:\Users\Sonia\documents\visual studio 2010\Projects\Ejercicio Tarea calculadora\Ejercicio Tarea calculadora\bin\Debug\Ejercicio Tarea calculadora.pdb
+C:\Users\Sonia\documents\visual studio 2010\Projects\Ejercicio Tarea calculadora\Ejercicio Tarea calculadora\bin\Debug\Ejercicio Tarea calculadora.xml
+C:\Users\Sonia\documents\visual studio 2010\Projects\Ejercicio Tarea calculadora\Ejercicio Tarea calculadora\obj\x86\Debug\Ejercicio_Tarea_calculadora.Form1.resources
+C:\Users\Sonia\documents\visual studio 2010\Projects\Ejercicio Tarea calculadora\Ejercicio Tarea calculadora\obj\x86\Debug\Ejercicio_Tarea_calculadora.Resources.resources
+C:\Users\Sonia\documents\visual studio 2010\Projects\Ejercicio Tarea calculadora\Ejercicio Tarea calculadora\obj\x86\Debug\Ejercicio Tarea calculadora.vbproj.GenerateResource.Cache
+C:\Users\Sonia\documents\visual studio 2010\Projects\Ejercicio Tarea calculadora\Ejercicio Tarea calculadora\obj\x86\Debug\Ejercicio Tarea calculadora.exe
+C:\Users\Sonia\documents\visual studio 2010\Projects\Ejercicio Tarea calculadora\Ejercicio Tarea calculadora\obj\x86\Debug\Ejercicio Tarea calculadora.xml
+C:\Users\Sonia\documents\visual studio 2010\Projects\Ejercicio Tarea calculadora\Ejercicio Tarea calculadora\obj\x86\Debug\Ejercicio Tarea calculadora.pdb
