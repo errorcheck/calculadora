@@ -1,16 +1,19 @@
-﻿Public Class Form1
-    Dim operacion As Char
-    Dim aux As String
+Public Class Form1
+    Dim operacion As String
+    Dim aux As Double
 
 
 
     Private Sub Salir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Salir.Click
-        End
+        Me.Close()
     End Sub
 
     Private Sub BtnLimpiar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnLimpiar.Click
         TextBoxvalorunico.Clear()
+        TextBoxvalorunico.Text = "0"
         aux = 0
+        operacion = String.Empty
+        Label1.Text = String.Empty
     End Sub
 
     
@@ -69,44 +72,53 @@
     End Sub
 
     Private Sub BtnIgual_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnIgual.Click
-        Select Case Operacion
+        ' Validación de división por cero
+        If operacion = "/" AndAlso Val(TextBoxvalorunico.Text) = 0 Then
+            MsgBox("No se puede dividir por 0")
+            Exit Sub
+        End If
+
+        Select Case operacion
             Case "+"
-                TextBoxvalorunico.Text = aux + Val(TextBoxvalorunico.Text)
+                TextBoxvalorunico.Text = (aux + Val(TextBoxvalorunico.Text)).ToString()
             Case "-"
-                TextBoxvalorunico.Text = aux - Val(TextBoxvalorunico.Text)
-            Case "x"
-                TextBoxvalorunico.Text = aux * Val(TextBoxvalorunico.Text)
+                TextBoxvalorunico.Text = (aux - Val(TextBoxvalorunico.Text)).ToString()
+            Case "*"
+                TextBoxvalorunico.Text = (aux * Val(TextBoxvalorunico.Text)).ToString()
             Case "/"
-                TextBoxvalorunico.Text = aux / Val(TextBoxvalorunico.Text)
+                TextBoxvalorunico.Text = (aux / Val(TextBoxvalorunico.Text)).ToString()
         End Select
 
+        operacion = String.Empty
+        Label1.Text = String.Empty
 
     End Sub
 
     Private Sub Button12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button12.Click
-        aux = TextBoxvalorunico.Text
+        aux = Val(TextBoxvalorunico.Text)
         TextBoxvalorunico.Clear()
         operacion = "-"
+        Label1.Text = aux & " -"
     End Sub
 
     Private Sub BtnMultiplicar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnMultiplicar.Click
-        aux = TextBoxvalorunico.Text
+        aux = Val(TextBoxvalorunico.Text)
         TextBoxvalorunico.Clear()
-        operacion = "x"
+        operacion = "*"
+        Label1.Text = aux & " *"
     End Sub
 
     Private Sub BtnDividir_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnDividir.Click
-        aux = TextBoxvalorunico.Text
+        aux = Val(TextBoxvalorunico.Text)
         TextBoxvalorunico.Clear()
         operacion = "/"
-        If aux = 0 Then
-            MsgBox("No se puede dividir por 0")
-        End If
+        Label1.Text = aux & " /"
     End Sub
     Private Sub BtnSumar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnSumar.Click
-        aux = TextBoxvalorunico.Text
+        aux = Val(TextBoxvalorunico.Text)
         TextBoxvalorunico.Clear()
-        operacion = "sumar"
+        operacion = "+"
+        Label1.Text = aux & " +"
     End Sub
 
     Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
