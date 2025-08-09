@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
@@ -53,6 +53,9 @@ Partial Class Form1
         Me.TextBoxvalorunico.Name = "TextBoxvalorunico"
         Me.TextBoxvalorunico.Size = New System.Drawing.Size(352, 30)
         Me.TextBoxvalorunico.TabIndex = 0
+        Me.TextBoxvalorunico.ReadOnly = True
+        Me.TextBoxvalorunico.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.TextBoxvalorunico.Text = "0"
         '
         'BtnSiete
         '
@@ -183,7 +186,7 @@ Partial Class Form1
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(60, 52)
         Me.Button12.TabIndex = 12
-        Me.Button12.Text = "__"
+        Me.Button12.Text = "-"
         Me.Button12.UseVisualStyleBackColor = False
         '
         'BtnMultiplicar
@@ -194,7 +197,7 @@ Partial Class Form1
         Me.BtnMultiplicar.Name = "BtnMultiplicar"
         Me.BtnMultiplicar.Size = New System.Drawing.Size(57, 57)
         Me.BtnMultiplicar.TabIndex = 13
-        Me.BtnMultiplicar.Text = "X"
+        Me.BtnMultiplicar.Text = "*"
         Me.BtnMultiplicar.UseVisualStyleBackColor = False
         '
         'BtnDividir
@@ -247,9 +250,9 @@ Partial Class Form1
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(106, 211)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(39, 13)
+        Me.Label1.Size = New System.Drawing.Size(0, 13)
         Me.Label1.TabIndex = 18
-        Me.Label1.Text = "Label1"
+        Me.Label1.Text = ""
         '
         'Form1
         '
